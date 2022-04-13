@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Website Design Request</h1>
+        <p id="description">Fill out the form to request a design</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="text"
+            name="name"
+            id="surname"
+            class="form-control"
+            placeholder="Enter your surname"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your E-mail"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone-number"
+            id="phone-number"
+            class="form-control"
+            placeholder="09*/*******"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form-control"
+            min="18"
+            max="65"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Type Of Website You Need?</label>
+          <select name="type" id="dropdown">
+            <option disabled selected value="please-select">
+              Please Select
+            </option>
+            <option value="personal">Personal</option>
+            <option value="educational">Educational</option>
+            <option value="sport">Sport</option>
+            <option value="food">Food, Restaurant</option>
+            <option value="local">Local Business</option>
+            <option value="small">Small Business</option>
+            <option value="meduim">Medium Business</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Choose Items for the Navigation Bar:</p>
+          <label>
+            <input
+              name="items"
+              value="about"
+              type="radio"
+              class="input-radio"
+              checked
+            />About</label
+          >
+          <label>
+            <input
+              name="items"
+              value="faq"
+              type="radio"
+              class="input-radio"
+            />FAQ</label
+          >
+          <label>
+            <input
+              name="items"
+              value="forum"
+              type="radio"
+              class="input-radio"
+            />Forum</label
+          >
+          <label>
+            <input
+              name="items"
+              value="blog"
+              type="radio"
+              class="input-radio"
+            />Blog</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Additional Services:</p>
+          <label>
+            <input
+              name="services"
+              value="banner"
+              type="checkbox"
+              class="input-checkbox"
+            />Banner Design</label
+          >
+          <label>
+            <input
+              name="services"
+              value="landing"
+              type="checkbox"
+              class="input-checkbox"
+            />Landing Page Design</label
+          >
+          <label>
+            <input
+              name="services"
+              value="advertiseiment"
+              type="checkbox"
+              class="input-checkbox"
+            />Advertisiment Managment</label
+          >
+          <label>
+            <input
+              name="services"
+              value="seo"
+              type="checkbox"
+              class="input-checkbox"
+            />SEO</label
+          >
+          <label>
+            <input
+              name="services"
+              value="video"
+              type="checkbox"
+              class="input-checkbox"
+            />Video</label
+          >
+          <label>
+            <input
+              name="services"
+              value="analytics"
+              type="checkbox"
+              class="input-checkbox"
+            />Analytics</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="comment">Additional Comments</label>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
